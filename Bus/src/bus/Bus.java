@@ -46,6 +46,14 @@ public class Bus {
         return currentNumOfPassangers;
     }
 
+    public void setAssignedLine(Line line) {
+        this.assignedLine = line;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
     public int getOnTheBus(int numOfPassangers) {
         if (numOfPassangers < 0) {
             throw new IllegalArgumentException("Nemůže nastoupit záporný počet lidí");
